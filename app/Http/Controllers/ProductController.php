@@ -28,7 +28,10 @@ class ProductController extends Controller
     {
         //dd($request->all());
         $validate=[
-            'name'=> 'required'
+            'name'=> 'required',
+            'price'=> 'required',
+            'currency'=> 'required',
+            'image'=> 'required'
         ];
         $this->validate($request,$validate);
         //$disk = Storage::disk('category_images');
